@@ -1,12 +1,93 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Autókereskedés</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <header>
+        <button> Autók </button>
+        <button> Szolgáltatások </button>
+        <button> Akciók </button>
+        <button> Kapcsolat </button>
+        <button> Finanszírozás </button>
+        <div class="group">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="search-icon">
+                <g>
+                    <path
+                        d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                    </path>
+                </g>
+            </svg>
+            <input id="query" class="input" type="search" placeholder="Search..." name="searchbar" />
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Fedezd fel az új Audi élményt!</h1>
+            <a href="#autok" class="btn">Autóink megtekintése</a>
+            <a href="#szolgaltatasok" class="btn">Szolgáltatásaink</a>
+        </div>
+    </section>
+    <section id="autok" class="autok">
+        <h2>Autómodellek</h2>
+        <div class="model">
+            <img src="audi-a4.jpg" alt="Audi A4">
+            <h3>Audi A4</h3>
+            <p>Részletes leírás...</p>
+            <a href="audi-a4.html">Bővebben</a>
+        </div>
+        <div class="model">
+            <img src="audi-a6.jpg" alt="Audi A6">
+            <h3>Audi A6</h3>
+            <p>Részletes leírás...</p>
+            <a href="audi-a6.html">Bővebben</a>
+        </div>
+    </section>
+    <section id="szolgaltatasok" class="szolgaltatasok">
+        <h2>Szolgáltatások</h2>
+        <p>Szerviz, karbantartás, és minden, ami egy Audihoz kell!</p>
+        <a href="#szerviz">Szolgáltatások részletesen</a>
+    </section>
+    <section id="akciok" class="akciok">
+        <h2>Aktuális Akciók</h2>
+        <div class="akcio">
+            <h3>Januári Akciók</h3>
+            <p>Hatalmas kedvezmények az Audi modellekre!</p>
+            <a href="#akciok">Akciók megtekintése</a>
+        </div>
+    </section>
+    <section id="finanszirozas" class="finanszirozas">
+        <h2>Finanszírozás</h2>
+        <p>Részletfizetés, lízing, kedvező hitel lehetőségek...</p>
+        <a href="#pfinancial-consultation">Pénzügyi tanácsadás igénylése</a>
+    </section>
+    <section id="kapcsolat" class="kapcsolat">
+        <h2>Kapcsolat</h2>
+        <form>
+            <label for="name">Név:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Üzenet:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Küldés</button>
+        </form>
+        <div class="contact-info">
+            <p>Telefonszám: +36 1 234 5678</p>
+            <p>Email: info@audiker.hu</p>
+        </div>
+    </section>
+    <footer>
+        <div class="social">
+            <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">LinkedIn</a>
+        </div>
+        <p>&copy; 2025 Audi Autókereskedés</p>
+    </footer>
 </body>
+
 </html>
