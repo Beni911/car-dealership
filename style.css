@@ -341,10 +341,11 @@ footer {
     padding: 20px;
 }
 
-footer .footer-left,
-footer .footer-right {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+footer .main {
+    margin-right: 800px;
+    margin-top: 40px;
+}
+
+.copy {
+    text-align: center;
 }
