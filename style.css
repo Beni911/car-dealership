@@ -380,9 +380,10 @@ footer {
 
 footer .main {
     margin-right: 800px;
-    margin-top: 40px;
+    margin-top: 200px;
 }
 
 .copy {
     text-align: center;
+    color: white;
 }
