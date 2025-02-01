@@ -595,3 +595,7 @@ footer .main {
 .learn button:hover .button-text {
     color: #e81cff;
 }
+
+.learn .button-text a {
+    text-decoration: none;
+}
