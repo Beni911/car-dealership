@@ -13,7 +13,7 @@ body {
 }
 
 body {
-    background-image: url(/forrasok/1050661\ \(1\).jpg); 
+    background-image: url(/forrasok/1050661\ \(1\).jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -22,29 +22,34 @@ body {
     position: absolute;
     background-position-y: -350px;
 }
+
 .hero h1 {
     font-size: 5em;
     text-align: center;
     color: white;
 }
-.autok h2{
+
+.autok h2 {
     font-size: 3em;
     text-align: left;
     margin-left: 20px;
     color: white;
 }
+
 .kapcsolat p {
     font-size: 1.2em;
     text-align: left;
     margin-left: 20px;
     color: white;
 }
-.kapcsolat h2{
+
+.kapcsolat h2 {
     font-size: 3em;
     text-align: left;
     margin-left: 20px;
     color: white;
 }
+
 .auto button {
     --glow-color: rgb(217, 176, 255);
     --glow-spread-color: rgba(191, 123, 255, 0.781);
@@ -386,4 +391,12 @@ footer .main {
 .copy {
     text-align: center;
     color: white;
+}
+
+.contact-info a{
+    text-decoration: none;
+    color: white;
+}
+.contact-info a:hover {
+    color: #e81cff;
 }
