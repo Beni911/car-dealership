@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 150px;
 }
 
 body {
@@ -11,12 +12,15 @@ body {
     box-sizing: border-box;
 }
 
-.auto {
-    background: url(https://images4.alphacoders.com/105/1050661.jpg) lightgray 50% / cover no-repeat;
+body {
+    background-image: url(/forrasok/1050661.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
-    height: 217px;
     flex-shrink: 0;
     max-width: 1920px;
+    position: absolute;
+    background-position-y: -350px;
 }
 
 
