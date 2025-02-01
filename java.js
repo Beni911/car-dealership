@@ -5,15 +5,15 @@ let currentIndex = 0;
 const images = document.querySelectorAll('.carousel img');
 
 function updateCarousel() {
-    const imageWidth = images[0].clientWidth; // Az első kép szélessége
-    carousel.style.transform = `translateX(-${currentIndex * imageWidth}px)`; // Váltás az aktuális index alapján
+    const imageWidth = images[0].clientWidth;
+    carousel.style.transform = `translateX(-${currentIndex * imageWidth}px)`;
 }
 
 prevButton.addEventListener('click', () => {
     if (currentIndex > 0) {
         currentIndex--;
     } else {
-        currentIndex = images.length - 1; // Ha az első képnél vagyunk, az utolsóra ugrik
+        currentIndex = images.length - 1;
     }
     updateCarousel();
 });
@@ -22,7 +22,7 @@ nextButton.addEventListener('click', () => {
     if (currentIndex < images.length - 1) {
         currentIndex++;
     } else {
-        currentIndex = 0; // Ha az utolsó képnél vagyunk, az elsőre ugrik
+        currentIndex = 0;
     }
     updateCarousel();
 });
