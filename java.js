@@ -1,28 +1,63 @@
-const prevButton = document.querySelector('.prev');
-const nextButton = document.querySelector('.next');
-const carousel = document.querySelector('.carousel');
-let currentIndex = 0;
-const images = document.querySelectorAll('.carousel img');
+document.addEventListener('DOMContentLoaded', () => {
+    // Első carousel
+    const prevButton1 = document.querySelector('.carousel-container .prev');
+    const nextButton1 = document.querySelector('.carousel-container .next');
+    const carousel1 = document.querySelector('.carousel');
+    const images1 = document.querySelectorAll('.carousel img');
+    let currentIndex1 = 0;
 
-function updateCarousel() {
-    const imageWidth = images[0].clientWidth;
-    carousel.style.transform = `translateX(-${currentIndex * imageWidth}px)`;
-}
+    // Második carousel
+    const prevButton2 = document.querySelector('.carousel-container2 .prev');
+    const nextButton2 = document.querySelector('.carousel-container2 .next');
+    const carousel2 = document.querySelector('.carousel2');
+    const images2 = document.querySelectorAll('.carousel2 img');
+    let currentIndex2 = 0;
 
-prevButton.addEventListener('click', () => {
-    if (currentIndex > 0) {
-        currentIndex--;
-    } else {
-        currentIndex = images.length - 1;
+    // A carousel frissítése
+    function updateCarousel(carousel, images, currentIndex) {
+        const imageWidth = images[0].clientWidth;
+        carousel.style.transform = `translateX(-${currentIndex * imageWidth}px)`;
     }
-    updateCarousel();
-});
 
-nextButton.addEventListener('click', () => {
-    if (currentIndex < images.length - 1) {
-        currentIndex++;
-    } else {
-        currentIndex = 0;
-    }
-    updateCarousel();
+    // Első carousel gombok kezelése
+    prevButton1.addEventListener('click', () => {
+        if (currentIndex1 > 0) {
+            currentIndex1--;
+        } else {
+            currentIndex1 = images1.length - 1;
+        }
+        updateCarousel(carousel1, images1, currentIndex1);
+    });
+
+    nextButton1.addEventListener('click', () => {
+        if (currentIndex1 < images1.length - 1) {
+            currentIndex1++;
+        } else {
+            currentIndex1 = 0;
+        }
+        updateCarousel(carousel1, images1, currentIndex1);
+    });
+
+    // Második carousel gombok kezelése
+    prevButton2.addEventListener('click', () => {
+        if (currentIndex2 > 0) {
+            currentIndex2--;
+        } else {
+            currentIndex2 = images2.length - 1;
+        }
+        updateCarousel(carousel2, images2, currentIndex2);
+    });
+
+    nextButton2.addEventListener('click', () => {
+        if (currentIndex2 < images2.length - 1) {
+            currentIndex2++;
+        } else {
+            currentIndex2 = 0;
+        }
+        updateCarousel(carousel2, images2, currentIndex2);
+    });
+
+    // Inicializálás: frissítjük mindkét carousel-t
+    updateCarousel(carousel1, images1, currentIndex1);
+    updateCarousel(carousel2, images2, currentIndex2);
 });
