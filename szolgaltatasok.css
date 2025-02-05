@@ -1,12 +1,351 @@
-h2 {
-    color: #000000;
-    font-size: 3em;
+/* Alap beállítások */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
 }
-p {
-    color: #000000;
-    font-size: 1.5em;
+
+h1,
+h2,
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
 }
-h2, p {
-    margin-left: 30px;
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Fejléc */
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+header nav ul li a {
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #d1d1d1;
+}
+
+/* Hero szakasz */
+.hero {
+    background-image: url('https://motionbgs.com/media/626/audi-rs6-hazard.jpg');
+    /* Helyi kép */
+    background-size: cover;
+    background-position: center;
+    background-position-x: -100px;
+    background-position-y: -160px;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.hero p {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+/* Szolgáltatások szakasz */
+.services {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+.service {
+    margin-bottom: 50px;
+    transition: transform 0.3s ease;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+}
+
+.service h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.service p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #222;
+    color: #fff;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+.service button {
+    transition: transform 0.3s ease;
+}
+
+.service button:hover {
+    transform: scale(1.05);
+}
+
+/* Ajánlatok szakasz */
+.offers {
+    background-color: #f1f1f1;
+    padding: 50px 20px;
+}
+
+.offers h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+.offers ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+}
+
+.offers ul li {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.offers ul li:hover {
+    transform: translateY(-10px);
+}
+
+/* Kapcsolatfelvétel szakasz */
+.contact {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+form input,
+form button {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+form input {
+    border: 1px solid #ddd;
+}
+
+form input:focus {
+    border-color: #222;
+    outline: none;
+}
+
+form button {
+    background-color: #222;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #444;
+}
+
+form button:active {
+    transform: scale(0.98);
+}
+
+/* Lábléc */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+footer ul li a {
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #d1d1d1;
+}
+
+/* Média lekérdezések */
+@media (max-width: 768px) {
+    .services {
+        padding: 30px 15px;
+    }
+
+    .services h2 {
+        font-size: 2rem;
+    }
+
+    .service h3 {
+        font-size: 1.5rem;
+    }
+
+    .service p {
+        font-size: 1rem;
+    }
+
+    .offers ul {
+        grid-template-columns: 1fr;
+    }
+
+    footer ul {
+        flex-direction: column;
+    }
+}
+
+/* Dark Mode stílusok */
+body.dark-mode {
+    background-color: #121212; /* Sötét háttér */
+    color: #f4f4f4; /* Világos szöveg */
+}
+
+/* Fejléc */
+header.dark-mode {
+    background-color: #333; /* Sötét háttér */
+    color: #fff; /* Fehér szöveg */
+}
+
+/* Szolgáltatások szakasz */
+.services.dark-mode {
+    background-color: #222; /* Sötétebb háttér */
+    color: #f4f4f4; /* Világos szöveg */
+}
+
+.service.dark-mode {
+    background-color: #333; /* Kártyák sötét háttere */
+    color: #f4f4f4; /* Világos szöveg */
+}
+
+/* Hero szakasz */
+.hero.dark-mode {
+    background-color: #222; /* Sötét háttér */
+    color: #fff; /* Világos szöveg */
+}
+
+/* Ajánlatok szakasz */
+.offers.dark-mode {
+    background-color: #333; /* Sötét háttér */
+}
+
+.offers ul li.dark-mode {
+    background-color: #444; /* Sötét kártyák */
+    color: #f4f4f4; /* Világos szöveg */
+}
+
+/* Kapcsolatfelvétel szakasz */
+.contact.dark-mode {
+    background-color: #333; /* Sötét háttér */
+    color: #f4f4f4; /* Világos szöveg */
+}
+
+form.dark-mode input {
+    background-color: #444; /* Input mezők sötét háttere */
+    color: #f4f4f4; /* Világos szöveg */
+    border: 1px solid #666; /* Sötétebb szegély */
+}
+
+/* Lábléc */
+footer.dark-mode {
+    background-color: #333; /* Sötét háttér */
+    color: #f4f4f4; /* Világos szöveg */
+}
+
+footer.dark-mode ul li a {
+    color: #f4f4f4; /* Világos szöveg */
+}
+
+footer.dark-mode ul li a:hover {
+    color: #d1d1d1; /* Halvány szürke szín hover esetén */
 }
