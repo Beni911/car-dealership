@@ -309,7 +309,10 @@ header.dark-mode {
 .offers.dark-mode {
     background-color: #333;
 }
-
+.alt2 button {
+    background-color: #444;
+    color: #f4f4f4;
+}
 .offers ul li.dark-mode {
     background-color: #444;
     color: #f4f4f4;
@@ -350,4 +353,62 @@ footer.dark-mode ul li a {
 
 footer.dark-mode ul li a:hover {
     color: #d1d1d1;
+}
+.auto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+}
+.services.dark-mode h2 {
+    color: #f4f4f4;
+}
+.auto button {
+    --glow-color: rgb(255, 255, 255);
+    --glow-spread-color: rgba(174, 158, 189, 0.1);
+    --enhanced-glow-color: rgb(255, 255, 255);
+    --btn-color: rgb(62, 58, 65);
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 1em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+}
+
+.auto button::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+}
+
+.auto button:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 2em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+    cursor: pointer;
+}
+
+.auto button:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+        0 0 2.5em 2em var(--glow-spread-color),
+        inset 0 0 .5em .25em var(--glow-color);
 }
