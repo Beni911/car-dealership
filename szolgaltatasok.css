@@ -1,4 +1,3 @@
-/* Alap beállítások */
 * {
     margin: 0;
     padding: 0;
@@ -28,7 +27,6 @@ a {
     color: inherit;
 }
 
-/* Fejléc */
 header {
     background-color: #222;
     color: #fff;
@@ -53,10 +51,9 @@ header nav ul li a:hover {
     color: #d1d1d1;
 }
 
-/* Hero szakasz */
+
 .hero {
     background-image: url('https://motionbgs.com/media/626/audi-rs6-hazard.jpg');
-    /* Helyi kép */
     background-size: cover;
     background-position: center;
     background-position-x: -100px;
@@ -83,7 +80,6 @@ header nav ul li a:hover {
     margin-top: 20px;
 }
 
-/* Szolgáltatások szakasz */
 .services {
     padding: 50px 20px;
     text-align: center;
@@ -142,7 +138,6 @@ button:hover {
     transform: scale(1.05);
 }
 
-/* Ajánlatok szakasz */
 .offers {
     background-color: #f1f1f1;
     padding: 50px 20px;
@@ -174,7 +169,6 @@ button:hover {
     transform: translateY(-10px);
 }
 
-/* Kapcsolatfelvétel szakasz */
 .contact {
     padding: 50px 20px;
     text-align: center;
@@ -229,7 +223,6 @@ form button:active {
     transform: scale(0.98);
 }
 
-/* Lábléc */
 footer {
     background-color: #222;
     color: white;
@@ -258,7 +251,6 @@ footer ul li a:hover {
     color: #d1d1d1;
 }
 
-/* Média lekérdezések */
 @media (max-width: 768px) {
     .services {
         padding: 30px 15px;
@@ -285,67 +277,77 @@ footer ul li a:hover {
     }
 }
 
-/* Dark Mode stílusok */
 body.dark-mode {
-    background-color: #121212; /* Sötét háttér */
-    color: #f4f4f4; /* Világos szöveg */
+    background-color: #121212;
+    color: #f4f4f4;
 }
 
-/* Fejléc */
 header.dark-mode {
-    background-color: #333; /* Sötét háttér */
-    color: #fff; /* Fehér szöveg */
+    background-color: #333;
+    color: #fff;
 }
 
-/* Szolgáltatások szakasz */
 .services.dark-mode {
-    background-color: #222; /* Sötétebb háttér */
-    color: #f4f4f4; /* Világos szöveg */
+    background-color: #222;
+    color: #f4f4f4;
 }
 
 .service.dark-mode {
-    background-color: #333; /* Kártyák sötét háttere */
-    color: #f4f4f4; /* Világos szöveg */
+    background-color: #333;
+    color: black;
 }
 
-/* Hero szakasz */
+.services.dark-mode .alt2 {
+    color: white;
+}
+
 .hero.dark-mode {
-    background-color: #222; /* Sötét háttér */
-    color: #fff; /* Világos szöveg */
+    background-color: #222;
+    color: #fff;
 }
 
-/* Ajánlatok szakasz */
 .offers.dark-mode {
-    background-color: #333; /* Sötét háttér */
+    background-color: #333;
 }
 
 .offers ul li.dark-mode {
-    background-color: #444; /* Sötét kártyák */
-    color: #f4f4f4; /* Világos szöveg */
+    background-color: #444;
+    color: #f4f4f4;
 }
 
-/* Kapcsolatfelvétel szakasz */
+.offers.dark-mode .alt {
+    background-color: #444;
+    color: #f4f4f4;
+}
+
+.offers.dark-mode h2 {
+    color: #f4f4f4;
+}
+
 .contact.dark-mode {
-    background-color: #333; /* Sötét háttér */
-    color: #f4f4f4; /* Világos szöveg */
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+.contact.dark-mode h2 {
+    color: #f4f4f4;
 }
 
 form.dark-mode input {
-    background-color: #444; /* Input mezők sötét háttere */
-    color: #f4f4f4; /* Világos szöveg */
-    border: 1px solid #666; /* Sötétebb szegély */
+    background-color: #444;
+    color: #f4f4f4;
+    border: 1px solid #666;
 }
 
-/* Lábléc */
 footer.dark-mode {
-    background-color: #333; /* Sötét háttér */
-    color: #f4f4f4; /* Világos szöveg */
+    background-color: #333;
+    color: #f4f4f4;
 }
 
 footer.dark-mode ul li a {
-    color: #f4f4f4; /* Világos szöveg */
+    color: #f4f4f4;
 }
 
 footer.dark-mode ul li a:hover {
-    color: #d1d1d1; /* Halvány szürke szín hover esetén */
+    color: #d1d1d1;
 }
