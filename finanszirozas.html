@@ -1,15 +1,63 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Finanszírozás</title>
+    <title>Audi Finanszírozás</title>
+    <link rel="stylesheet" href="finanszirozas.css">
 </head>
+
 <body>
-    <section id="finanszirozas" class="finanszirozas">
-        <h2>Finanszírozás</h2>
-        <p>Részletfizetés, lízing, kedvező hitel lehetőségek...</p>
-        <a href="#pfinancial-consultation">Pénzügyi tanácsadás igénylése</a>
+    <header>
+        <div class="container">
+            <h1>Audi Finanszírozás</h1>
+            <p class="subheading">Válassza ki az Önnek legmegfelelőbb finanszírozási lehetőséget!</p>
+        </div>
+    </header>
+    <section class="intro">
+        <div class="container">
+            <h2>Miért válassza az Audi finanszírozást?</h2>
+            <p>Az Audi kiemelkedő finanszírozási lehetőségeket kínál, hogy megvalósíthassa álmai autóját. Kiváló
+                kondíciók, kedvező kamatok és rugalmas futamidők várják Önt!</p>
+        </div>
     </section>
+    <section class="options">
+        <div class="container">
+            <h2>Elérhető finanszírozási lehetőségek</h2>
+            <div class="option">
+                <h3>Autóhitel</h3>
+                <p>Válassza az autóhitel lehetőséget, ha szeretné birtokba venni az Audi autóját. Az autóhitel gyors,
+                    egyszerű és rugalmas megoldás.</p>
+                <button onclick="showFinancingDetails('autoHitel')">További részletek</button>
+            </div>
+            <div class="option">
+                <h3>Lízing</h3>
+                <p>A lízing lehetőséget akkor ajánljuk, ha nem szeretne a jövőben az autó tulajdonosa lenni, de hosszú
+                    távon élvezné a használatát.</p>
+                <button onclick="showFinancingDetails('lizing')">További részletek</button>
+            </div>
+            <div class="option">
+                <h3>Ballon Lízing</h3>
+                <p>Ez a konstrukció lehetőséget ad arra, hogy a futamidő végén eldöntse, megvásárolja, visszaadja, vagy
+                    új autót válasszon.</p>
+                <button onclick="showFinancingDetails('ballonLizing')">További részletek</button>
+            </div>
+        </div>
+    </section>
+    <section id="financing-details" class="details">
+        <div class="container">
+            <h2>Finanszírozás részletei</h2>
+            <p id="financingText">Válassza ki az egyik finanszírozási lehetőséget, és kattintson a "További részletek"
+                gombra!</p>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Audi. Minden jog fenntartva.</p>
+        </div>
+    </footer>
+    <script src="finanszirozas.js"></script>
 </body>
+
 </html>
