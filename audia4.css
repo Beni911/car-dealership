@@ -1,4 +1,3 @@
-/* Általános alapbeállítások */
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +17,6 @@ body {
     margin: 0 auto;
 }
 
-/* Fejléc */
 header {
     background-color: #111;
     color: #fff;
@@ -35,7 +33,6 @@ header .subheading {
     margin-top: 10px;
 }
 
-/* Bevezető szekció */
 .intro {
     display: flex;
     flex-wrap: wrap;
@@ -65,7 +62,6 @@ header .subheading {
     color: #555;
 }
 
-/* Főbb jellemzők szekció */
 .features {
     background-color: #fff;
     padding: 40px 0;
@@ -88,7 +84,6 @@ header .subheading {
     margin: 10px 0;
 }
 
-/* Cselekvésre ösztönzés */
 .cta {
     background-color: #004c97;
     color: white;
@@ -121,7 +116,6 @@ header .subheading {
     background-color: #003366;
 }
 
-/* Lábléc */
 footer {
     background-color: #111;
     color: #fff;
