@@ -1,18 +1,54 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akciók</title>
+    <title>Audi A4 és A6 Akciók</title>
+    <link rel="stylesheet" href="akciok.css">
 </head>
+
 <body>
-    <section id="akciok" class="akciok">
-        <h2>Aktuális Akciók</h2>
-        <div class="akcio">
-            <h3>Januári Akciók</h3>
-            <p>Hatalmas kedvezmények az Audi modellekre!</p>
-            <a href="#akciok">Akciók megtekintése</a>
+    <header>
+        <div class="container">
+            <h1>Audi A4 és A6 Akciók</h1>
+            <p class="subheading">Fedezze fel az Audi A4 és A6 legújabb ajánlatait és kedvezményeit!</p>
+        </div>
+    </header>
+    <section class="offers">
+        <div class="container">
+            <h2>Aktuális ajánlatok</h2>
+            <div class="offer">
+                <div class="car-info">
+                    <img src="https://via.placeholder.com/300x200.png?text=Audi+A4" alt="Audi A4">
+                    <h3>Audi A4 Akció</h3>
+                    <p>50 000 Ft kedvezmény minden új Audi A4 vásárlására! Az akció 2025. február 28-ig érvényes.</p>
+                    <button onclick="showDetails('audiA4')">További részletek</button>
+                </div>
+            </div>
+            <div class="offer">
+                <div class="car-info">
+                    <img src="https://via.placeholder.com/300x200.png?text=Audi+A6" alt="Audi A6">
+                    <h3>Audi A6 Akció</h3>
+                    <p>Akciós ár a teljes Audi A6 modellválasztékra! 100 000 Ft kedvezmény a legújabb modellekhez.</p>
+                    <button onclick="showDetails('audiA6')">További részletek</button>
+                </div>
+            </div>
         </div>
     </section>
+    <section id="details" class="details">
+        <div class="container">
+            <h2>Akció részletei</h2>
+            <p id="detailsText">Válassza ki a fenti ajánlatok közül a kívánt modellt, és kattintson a "További
+                részletek" gombra!</p>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Audi. Minden jog fenntartva.</p>
+        </div>
+    </footer>
+    <script src="akciok.js"></script>
 </body>
+
 </html>
