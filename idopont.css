@@ -1,4 +1,4 @@
-/* General page styling */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
@@ -13,7 +13,6 @@ h1 {
     margin-top: 30px;
 }
 
-/* Form styling */
 form {
     max-width: 500px;
     margin: 20px auto;
@@ -63,7 +62,6 @@ button:hover {
     background-color: #003366;
 }
 
-/* Responsive design */
 @media (max-width: 600px) {
     form {
         width: 90%;
@@ -77,5 +75,5 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow: hidden; /* Disable scrolling */
+    overflow: hidden;
 }
