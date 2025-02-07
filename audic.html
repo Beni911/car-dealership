@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audi Connect Service</title>
+    <link rel="stylesheet" href="audic.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Audi Connect Szolgáltatás</h1>
+        <form id="audiForm">
+            <div class="form-group">
+                <label for="carModel">Autómodell:</label>
+                <select id="carModel" name="carModel">
+                    <option value="audiA3">Audi A4</option>
+                    <option value="audiA4">Audi A6</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="name">Név:</label>
+                <input type="text" id="name" name="name" required placeholder="Név">
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required placeholder="E-mail">
+            </div>
+            <div class="form-group">
+                <label for="phone">Telefonszám:</label>
+                <input type="tel" id="phone" name="phone" required placeholder="Telefonszám">
+            </div>
+            <div class="form-group">
+                <label for="connectService">Audi Connect Szolgáltatás:</label>
+                <select id="connectService" name="connectService">
+                    <option value="connectBasic">Connect Basic</option>
+                    <option value="connectPlus">Connect Plus</option>
+                    <option value="connectPremium">Connect Premium</option>
+                </select>
+            </div>
+            <button type="button" onclick="submitForm()">Küldés</button>
+        </form>
+        <div id="confirmationMessage" style="display:none;">
+            <h2>Ajánlatkérés sikeres!</h2>
+            <p>Az Ön által választott Audi Connect szolgáltatás hamarosan aktiválásra kerül.</p>
+        </div>
+    </div>
+    <script src="audic.js"></script>
+</body>
+
+</html>
