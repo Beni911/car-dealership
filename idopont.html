@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Időpontfoglalás</title>
+    <link rel="stylesheet" href="idopont.css">
+</head>
+<body>
+    <h1>Időpontfoglalás</h1>
+    <form action="submit.php" method="post">
+        <label for="name">Név:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="phone">Telefonszám:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <br>
+        <label for="date">Dátum:</label>
+        <input type="date" id="date" name="date" required>
+        <br>
+        <label for="time">
+    <span>Elérhető időpontok</span>
+    <select id="time" name="time" required>
+        <option value="09:00">09:00</option>
+        <option value="10:00">10:00</option>
+        <option value="11:00">11:00</option>
+        <option value="12:00">12:00</option>
+        <option value="13:00">13:00</option>
+    </select>
+    <br>
+    <label for="service">Szolgáltatás:</label>
+    <select id="service" name="service" required>
+            <option value="szerviz">Szerviz</option>
+            <option value="karbantartas">Karbantartás</option>
+            <option value="garancia">Garancia</option>
+            <option value="javitas">Javítás</option>
+            <option value="connect">Audi Connect</option>
+            <option value="penzugy">Pénzügyi szolgáltatás</option>
+    </select>
+    <br>
+    <button type="submit">Foglalás elküldése</button>
+</form>
+</body>
+</html>

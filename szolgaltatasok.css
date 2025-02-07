@@ -56,7 +56,7 @@ header nav ul li a:hover {
     background-image: url('https://cf-cdn-v6-api.audi.at/files/cef29b4552f23ba9e96a8f172da9ea0cc2932c0f/aa422990-0648-444f-8ddc-70396276e3d0/rsegt20246553-l');
     background-size: cover;
     background-position: center;
-    background-position-x: -100px;
+    background-position-x: 10px;
     background-position-y: -160px;
     height: 60vh;
     display: flex;
