@@ -61,3 +61,12 @@ document.addEventListener('DOMContentLoaded', () => {
     updateCarousel(carousel1, images1, currentIndex1);
     updateCarousel(carousel2, images2, currentIndex2);
 });
+document.addEventListener('scroll', function() {
+    const images = document.querySelectorAll('.image');
+    images.forEach(image => {
+        const rect = image.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom >= 0) {
+            image.classList.add('visible');
+        }
+    });
+});
